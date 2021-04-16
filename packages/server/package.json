@@ -8,6 +8,10 @@
     "/dist"
   ],
   "dependencies": {
-    "@google-cloud/bigquery": "^5.5.0"
+    "@google-cloud/bigquery": "^5.5.0",
+    "@types/node": "^14.14.41"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.41"
   }
 }

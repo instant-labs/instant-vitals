@@ -1,23 +1,35 @@
+import { schemas } from "./schemas";
 import { BigQuery } from "@google-cloud/bigquery";
-type Options = {
+
+const bigquery = new BigQuery();
+
+interface Options {
   datasetId: string;
-  tableId: string;
-};
+}
+
 const options: Options = {
   datasetId: "",
-  tableId: "",
 };
 
-export const stream = async (metric: unknown) => {
-  const bigquery = new BigQuery();
-
-  await bigquery
-    .dataset(options.datasetId)
-    .table(options.tableId)
-    .insert(metric);
+export const streamVitals = async (metric: unknown, table: string) => {
+  try {
+    await bigquery.dataset(options.datasetId).table(table).insert(metric);
+  } catch (e) {}
 };
 
-export const init = ({ datasetId, tableId }: Options) => {
+export const init = async ({ datasetId }: Options) => {
   options.datasetId = datasetId;
-  options.tableId = tableId;
+
+  const [datasets] = await bigquery.getDatasets();
+  if (!datasets.map((set) => set.id).includes(datasetId)) {
+    await bigquery.createDataset(datasetId);
+  }
+
+  for (const [metricName, schema] of Object.entries(schemas)) {
+    try {
+      await bigquery
+        .dataset(options.datasetId)
+        .createTable(metricName, { schema: schema, location: "US" });
+    } catch (e) {}
+  }
 };
