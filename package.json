@@ -1,0 +1,15 @@
+{
+  "name": "vitals",
+  "version": "0.0.1",
+  "description": "Simple tools to track and improve your Web Vitals scores",
+  "main": "index.js",
+  "repository": "https://github.com/InstantDomainSearch/instant-vitals",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "tslib": "^2.2.0"
+  }
+}

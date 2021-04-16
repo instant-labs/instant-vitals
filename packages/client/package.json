@@ -1,0 +1,13 @@
+{
+  "name": "@instantdomain/vitals-client",
+  "version": "0.0.1",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "files": [
+    "/dist"
+  ],
+  "dependencies": {
+    "web-vitals": "^1.1.1"
+  }
+}
