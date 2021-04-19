@@ -1,1 +1,1 @@
-# instant-vitals
+# Instant Vitals Client

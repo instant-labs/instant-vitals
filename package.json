@@ -1,11 +1,24 @@
 {
-  "name": "vitals",
-  "version": "0.0.1",
+  "name": "instant-vitals",
+  "version": "1.0.0",
   "description": "Simple tools to track and improve your Web Vitals scores",
   "main": "index.js",
   "repository": "https://github.com/InstantDomainSearch/instant-vitals",
+  "homepage": "https://vitals.dev",
   "license": "MIT",
-  "private": true,
+  "private": false,
+  "keywords": [
+    "web vitals",
+    "LCP",
+    "FID",
+    "CLS",
+    "Largest Contentful Paint",
+    "First Input Delay",
+    "Cumulative Layout Shift"
+  ],
+  "files": [
+    "README.md"
+  ],
   "workspaces": [
     "packages/*"
   ],
