@@ -1,1 +1,1 @@
-# Instant Vitals
+![Cover logo](./cover.svg)
