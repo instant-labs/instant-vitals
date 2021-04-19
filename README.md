@@ -1,1 +1,1 @@
-![Cover logo](./cover.svg)
+[[[/cover.svg]]](https://vitals.dev) 
