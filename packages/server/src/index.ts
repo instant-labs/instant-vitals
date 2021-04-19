@@ -1,8 +1,6 @@
 import { schemas } from "./schemas";
 import { BigQuery } from "@google-cloud/bigquery";
 
-const bigquery = new BigQuery();
-
 interface Options {
   datasetId: string;
 }
@@ -12,13 +10,18 @@ const options: Options = {
 };
 
 export const streamVitals = async (metric: unknown, table: string) => {
+  const bigquery = new BigQuery();
   try {
-    await bigquery.dataset(options.datasetId).table(table).insert(metric);
-  } catch (e) {}
+    await bigquery.dataset(options.datasetId).table(table).insert([metric]);
+  } catch (e) {
+    console.error(e);
+  }
 };
 
 export const init = async ({ datasetId }: Options) => {
   options.datasetId = datasetId;
+
+  const bigquery = new BigQuery();
 
   const [datasets] = await bigquery.getDatasets();
   if (!datasets.map((set) => set.id).includes(datasetId)) {
@@ -29,7 +32,7 @@ export const init = async ({ datasetId }: Options) => {
     try {
       await bigquery
         .dataset(options.datasetId)
-        .createTable(metricName, { schema: schema, location: "US" });
+        .createTable(metricName, { schema: schema });
     } catch (e) {}
   }
 };

@@ -1,5 +1,5 @@
 export const schemas = {
-  cls: {
+  CLS: {
     fields: [
       {
         mode: "REQUIRED",
@@ -171,7 +171,7 @@ export const schemas = {
       },
     ],
   },
-  fid: {
+  FID: {
     fields: [
       {
         mode: "REQUIRED",
@@ -237,7 +237,7 @@ export const schemas = {
       },
     ],
   },
-  fcp: {
+  FCP: {
     fields: [
       {
         mode: "REQUIRED",
@@ -288,7 +288,7 @@ export const schemas = {
       },
     ],
   },
-  lcp: {
+  LCP: {
     fields: [
       {
         mode: "REQUIRED",
@@ -369,7 +369,7 @@ export const schemas = {
       },
     ],
   },
-  ttfb: {
+  TTFB: {
     fields: [
       {
         mode: "REQUIRED",
