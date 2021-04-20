@@ -123,4 +123,4 @@ $x("/html/body/div[1]/main/div/div/div[2]/div/div/blockquote");
 
 ![Page query example](./assets/page_example.png)
 
-As you can see, you can identify which elements on the page are degrading your CLS scores.
+As you can see, you can identify which elements on the page are degrading your CLS scores. Now you can use this information to improve your users' experiences and your Web Vitals scores!
