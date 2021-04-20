@@ -34,7 +34,7 @@ import { init } from "@instantdomain/vitals-client";
 init({ endpoint: "/api/web-vitals" });
 ```
 
-Here I'm using `"/api/web-vitals"` as the endpoint. you'll want to change this to an endpoint of your choice on a server that you control.
+Here I'm using `"/api/web-vitals"` as the endpoint. You'll want to change this to an endpoint of your choice on a server that you control.
 
 ## Server Installation
 
