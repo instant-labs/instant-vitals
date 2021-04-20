@@ -1,10 +1,11 @@
-![Cover logo](./cover.svg)
+[![Cover logo](./cover.svg)](https://vitals.dev)
 
 # instant-vitals: Simple tools to track and improve your Web Vitals scores
 
-![npm (tag)](https://img.shields.io/npm/v/@instantdomain/vitals-client/latest?label=%40instantdomain%2Fvitals-client)
-![npm (tag)](https://img.shields.io/npm/v/@instantdomain/vitals-server/latest?label=%40instantdomain%2Fvitals-server)
-![GitHub](https://img.shields.io/github/license/instantdomainsearch/instant-vitals)
+
+[![npm (tag)](https://img.shields.io/npm/v/@instantdomain/vitals-client/latest?label=%40instantdomain%2Fvitals-client)](https://www.npmjs.com/package/@instantdomain/vitals-client)
+[![npm (tag)](https://img.shields.io/npm/v/@instantdomain/vitals-server/latest?label=%40instantdomain%2Fvitals-server)](https://www.npmjs.com/package/@instantdomain/vitals-server)
+[![GitHub](https://img.shields.io/github/license/instantdomainsearch/instant-vitals)](https://github.com/InstantDomainSearch/instant-vitals/blob/main/LICENSE)
 
 instant-vitals is a tool for collecting Web Vitals metrics and storing them in Google BigQuery. The library has both a client and a server component. The client is responsible for collecting the metrics using web-vitals, which is developed and provided by the Google Chrome team, and sending the metrics to the endpoint of your choice. In addition to this, the client converts HTML elements into XPath query strings so that you can easily track down where your problems are later. The server component is used to then take these metrics and send them to BigQuery. Once the metrics are in BigQuery, you can more easily query for the information you need to improve your Web Vitals scores.
 
