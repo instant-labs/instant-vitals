@@ -1,6 +1,6 @@
 [![Cover logo](./assets/cover.svg)](https://vitals.dev)
 
-# Instant Vitals: Simple tools to track and improve your Web Vitals scores
+# [Instant Vitals](https://vitals.dev): Simple tools to track and improve your Web Vitals scores
 
 [![npm (tag)](https://img.shields.io/npm/v/@instantdomain/vitals-client/latest?label=%40instantdomain%2Fvitals-client)](https://www.npmjs.com/package/@instantdomain/vitals-client)
 [![npm (tag)](https://img.shields.io/npm/v/@instantdomain/vitals-server/latest?label=%40instantdomain%2Fvitals-server)](https://www.npmjs.com/package/@instantdomain/vitals-server)
