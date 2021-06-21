@@ -19,9 +19,6 @@
   "files": [
     "README.md"
   ],
-  "workspaces": [
-    "packages/*"
-  ],
   "devDependencies": {
     "tslib": "^2.2.0"
   }

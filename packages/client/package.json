@@ -8,6 +8,6 @@
     "/dist"
   ],
   "dependencies": {
-    "web-vitals": "^1.1.1"
+    "web-vitals": "^2.0.1"
   }
 }
