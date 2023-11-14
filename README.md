@@ -1,4 +1,4 @@
-[![Cover logo](./assets/cover.png)](https://vitals.dev)
+[![Cover logo](./assets/cover.svg)](https://vitals.dev)
 
 # [Instant Vitals](https://vitals.dev): Simple tools to track and improve your Web Vitals scores
 
